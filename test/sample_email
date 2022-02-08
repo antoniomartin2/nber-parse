@@ -1,0 +1,2258 @@
+Original Message
+
+Message ID	<CAF0Evr3=dfVZshL=HSmS=i6qCv3FBXrhg+yi4M+q=PwW8wAd+A@mail.gmail.com>
+Created at:	Tue, Feb 1, 2022 at 8:21 PM (Delivered after 27 seconds)
+From:	Cynthia Okita <ciokita@berkeley.edu>
+To:	Cathy Garza <cathy_garza@haas.berkeley.edu>, Antonio Martin <antonio.martin@berkeley.edu>, Andy Chen <chen.andy@berkeley.edu>
+Subject:	Fwd: The Latest NBER Research (2022-01-31)
+SPF:	PASS with IP 209.85.220.41 Learn more
+DKIM:	'PASS' with domain berkeley-edu.20210112.gappssmtp.com Learn more
+
+
+Download Original	Copy to clipboard
+Delivered-To: antonio.martin@berkeley.edu
+Received: by 2002:a05:7108:1b2a:0:0:0:0 with SMTP id k10csp1424592gdf;
+        Tue, 1 Feb 2022 20:22:21 -0800 (PST)
+X-Received: by 2002:a0d:d405:: with SMTP id w5mr354771ywd.325.1643775741385;
+        Tue, 01 Feb 2022 20:22:21 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1643775741; cv=none;
+        d=google.com; s=arc-20160816;
+        b=p+DcqEgHMY4UJzXuu3xlRPsRg7FfZZFA2YbE8K08b49JHan6HCt7BbZkCQL6Op78gU
+         acv7syVLzXQ0BC1HirvIfeJL/LSSTc8WXsPmRHtHZ4b4vU+ndF0jx+w3ZMzwtML456+g
+         OtQDXAIO5vPsO7C07nyZ6nP4NjxP6NLEUZJpQWPM+xwAgyoCTRwz3UD0MfxNkv8xl3w1
+         +aeXkclxBXfvyAScDOLKixMDjdCuFP3Dpr+K0mVDaOhVd1rXMtwlA3XBxMwOmTBQ+Dwe
+         ljIgqZmMeab2tY6vX8lYC2pvQWmGoEame93GCtgOz+K9aUocBeONBhmuf8ebB1H/MH9O
+         clBQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=udSYCyMji3oJJcYIT2FzaXKFySazJgQYOwuOSFldamI=;
+        b=LZVcuCM96gWWufkcGqhX7d3X7M29J2iO7ruomzns/xVMe5EMtUKuiHWwidLRUt1jZO
+         026mCbtC24vY1r4HxJGeXuZw5LgJU7+iR/HrDCSsSZaG22RaIsgpFoE2fnRTbanfS7y7
+         yXVQf6IwGTOQSMmNlo+unydTcEyHx/za2eINoG3sbZMRWhkg/w6TUBtCXzIJYMHQ9Yu9
+         sDtwn3ic2EfhzMQ+cuJnlzaI0q6ok4SPVQibQd1LuzBHka312IBQsVoFEQCioIWpL/Z4
+         5bPFCsi8fYk1O0s8nnQVm1gJNUCXoLEkg8mxEodZij/+z0VQUlBapYUYggWpehqFzbBp
+         0oIg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@berkeley-edu.20210112.gappssmtp.com header.s=20210112 header.b=uZgqBTC2;
+       spf=pass (google.com: domain of ciokita@berkeley.edu designates 209.85.220.41 as permitted sender) smtp.mailfrom=ciokita@berkeley.edu
+Return-Path: <ciokita@berkeley.edu>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id l7sor16880675ybt.177.2022.02.01.20.22.21
+        for <antonio.martin@berkeley.edu>
+        (Google Transport Security);
+        Tue, 01 Feb 2022 20:22:21 -0800 (PST)
+Received-SPF: pass (google.com: domain of ciokita@berkeley.edu designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@berkeley-edu.20210112.gappssmtp.com header.s=20210112 header.b=uZgqBTC2;
+       spf=pass (google.com: domain of ciokita@berkeley.edu designates 209.85.220.41 as permitted sender) smtp.mailfrom=ciokita@berkeley.edu
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=berkeley-edu.20210112.gappssmtp.com; s=20210112;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=udSYCyMji3oJJcYIT2FzaXKFySazJgQYOwuOSFldamI=;
+        b=uZgqBTC25WDhzAhsuuzHQ7ni/s/EUJOJb70bQirm0F6i2czVlRbBFGzrafrxpiYI5R
+         +A/JI6GkaKFjVCH8uUNDCUC25cRHOFuEEOAGAXu9jTX0GEm1+LlOHP8ixG2uhL6atQ4Y
+         GAdSU+AhILvyOpsWaEgK1BAnGs2cCp8saatvARJt4DaF/XhamZUApBnj4hRa0Rxib9Cl
+         S/dEdJC/tVifxYjlgVDRSfmQMAPSAqD/RjGslUOJxo0MfACsV3KychEBLEQhJIWBcEKF
+         e3+7LEsL/hGr6Ab+COhAjB5UlW3dcahaRd0FJRXOCJyfmqGu8HnOZnixVBY0EpDpC7Zn
+         4cww==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20210112;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=udSYCyMji3oJJcYIT2FzaXKFySazJgQYOwuOSFldamI=;
+        b=eJinswVyi/la+4yVoW69YOOXMTEX8Ak88c36yS38WXKdsYaQRDH5SGLvPNCAbozbd9
+         n8lrhn6HeoLbX4fiha4Dr9xMzSRGumApGQezZDkN1pBEFycGw9yPIiGNfWCYIYypCF8f
+         Lm1XE+or8L/9SeDkRCOyf033GaNYRxU2dHxRKvi7X4HJa4JlyOpCEu91TvEB4iF7cfPh
+         ikNYb/eziefWfaAkUQroAHhXVbdbYUnq5f0huGr/rCbSRekeBFn+gmsFRGE+TT2qHvSo
+         LJnusNheqGB9ukyoFZcPaundxO9K26EqUxynPhkJJjRT8dNksupXgSQBUzZtFON3rBRp
+         s46Q==
+X-Gm-Message-State: AOAM532h1slo6dG6U7pSd/QZbKckf5tGmkmpl+8nR3cWzYXJaO+Au12i R9PMmxFAZX4V7aMjy09UhHdC6uiuCYEe5kjLBf34YXCY
+X-Google-Smtp-Source: ABdhPJzYNcOkrNKEnbN6nxBcIdkN+BIglDbiyV68bKhyeKu3q8s9yV26RhgeX+kzgYrovHHp2LJxCjajRgkaY5pGA9M=
+X-Received: by 2002:a25:4dd4:: with SMTP id a203mr44059685ybb.340.1643775740496; Tue, 01 Feb 2022 20:22:20 -0800 (PST)
+MIME-Version: 1.0
+References: <202201310524.20V5Ofhd021551@mail2.nber.org> <trinity-c36ad068-f789-4713-8412-ba471d241dce-1643660553301@msvc-mesg-web012> <CALOZ9s72G1=kgBV5HBkskb8tjBO7jebLQqxx5jQ4JADgOfKcdQ@mail.gmail.com>
+In-Reply-To: <CALOZ9s72G1=kgBV5HBkskb8tjBO7jebLQqxx5jQ4JADgOfKcdQ@mail.gmail.com>
+From: Cynthia Okita <ciokita@berkeley.edu>
+Date: Tue, 1 Feb 2022 20:21:54 -0800
+Message-ID: <CAF0Evr3=dfVZshL=HSmS=i6qCv3FBXrhg+yi4M+q=PwW8wAd+A@mail.gmail.com>
+Subject: Fwd: The Latest NBER Research (2022-01-31)
+To: Cathy Garza <cathy_garza@haas.berkeley.edu>, Antonio Martin <antonio.martin@berkeley.edu>, Andy Chen <chen.andy@berkeley.edu>
+Content-Type: multipart/alternative; boundary="0000000000001a788405d7015db1"
+
+--0000000000001a788405d7015db1
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Antonio and Andy,
+
+We will be discussing this email during our meeting. Essentially, we want
+to see if you think we can make a script that would pull the names, title
+and link to the paper if they match certain keywords and have it
+automatically feed into an excel or google sheet.
+
+
+Thank you,
+Cynthia
+
+---------- Forwarded message ---------
+From: Karin Li <likarin95@gmail.com>
+Date: Mon, Jan 31, 2022 at 12:50 PM
+Subject: Fwd: The Latest NBER Research (2022-01-31)
+To: Cynthia Okita <ciokita@berkeley.edu>, Cathy Garza <
+cathy_garza@haas.berkeley.edu>
+
+
+Hi Cynthia, hi Cathy,
+
+here is an example-email from the NBER (for the working papers, sent on a
+weekly basis).
+
+Kind regards
+Karin
+
+---------- Forwarded message ---------
+Von: <karin_li@web.de>
+Date: Mo., 31. Jan. 2022 um 21:22 Uhr
+Subject: Fwd: The Latest NBER Research (2022-01-31)
+To: <likarin95@gmail.com>
+
+
+
+
+
+
+Anfang der weitergeleiteten E-Mail
+
+Von: "NBER" <bulletin@nber.org>
+Datum: 31. Januar 2022
+An: karin_li@web.de
+Cc:
+Betreff: The Latest NBER Research (2022-01-31)
+[image: NBER HOME] <http://www.nber.org/>
+January 31, 2022
+<https://www.facebook.com/National-Bureau-of-Economic-Research-115165771829=
+285/>
+<https://twitter.com/nberpubs>
+New This Week: The Latest NBER Working Papers
+The National Bureau of Economic Research circulates research by its
+affiliated economists as working papers intended for professional and
+public discussion and comment. The papers have not been peer reviewed.
+*1.* Incentive-Compatible Critical Values
+<https://www.nber.org/papers/w29702?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Adam McCloskey and Pascal Michaillat #29702
+*2.* Should We Have Automatic Triggers for Unemployment Benefit Duration
+And How Costly Would They Be?
+<https://www.nber.org/papers/w29703?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Gabriel Chodorow-Reich, Peter Ganong, and Jonathan Gruber #29703
+*3.* Waiting for Capital: Dynamic Intermediation in Illiquid Markets
+<https://www.nber.org/papers/w29712?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Barney Hartman-Glaser, Simon Mayer, and Konstantin Milbradt #29712
+*4.* Addressing Endogeneity Using a Two-stage Copula Generated Regressor
+Approach
+<https://www.nber.org/papers/w29708?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Fan Yang, Yi Qian, and Hui Xie #29708
+*5.* Two-Way Fixed Effects and Differences-in-Differences with
+Heterogeneous Treatment Effects: A Survey
+<https://www.nber.org/papers/w29691?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Cl=C3=A9ment de Chaisemartin and Xavier D'Haultfoeuille #29691
+*6.* Education and Income Gradients in Longevity: The Role of Policy
+<https://www.nber.org/papers/w29694?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Adriana Lleras-Muney #29694
+*7.* The (Un)Importance of Inheritance
+<https://www.nber.org/papers/w29693?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Sandra E. Black, Paul J. Devereux, Fanny Landaud, and Kjell G. Salvanes
+#29693
+*8.* Currency Undervaluation and Comparative Advantage
+<https://www.nber.org/papers/w29699?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Paul Bergin #29699
+*9.* Making Money
+<https://www.nber.org/papers/w29710?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Gary B. Gorton, Chase P. Ross, and Sharon Y. Ross #29710
+*10.* Ageing and Welfare-State Policy: Macroeconomic Perspective
+<https://www.nber.org/papers/w29700?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Assaf Razin and Alexander Horst Schwemmer #29700
+*11.* Expectations Formation and Forward Information
+<https://www.nber.org/papers/w29711?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Nathan Goldstein and Yuriy Gorodnichenko #29711
+*12.* Idiosyncratic Income Risk and Aggregate Fluctuations
+<https://www.nber.org/papers/w29704?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Davide Debortoli and Jordi Gal=C3=AD #29704
+*13.* Does Quitting Smoking Increase Obesity? Evidence From Accounting for
+Misreporting
+<https://www.nber.org/papers/w29701?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Rusty Tchernis, Keith F. Teltser, and Arjun Teotia #29701
+*14.* Labor Market Fluidity and Human Capital Accumulation
+<https://www.nber.org/papers/w29698?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Niklas Engbom #29698
+*15.* Earnings Inequality and Dynamics in the Presence of Informality: The
+Case of Brazil
+<https://www.nber.org/papers/w29696?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Niklas Engbom, Gustavo Gonzaga, Christian Moser, and Roberta Olivieri
+#29696
+*16.* State-building on the Margin: An Urban Experiment in Medell=C3=ADn
+<https://www.nber.org/papers/w29692?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Christopher Blattman, Gustavo Duncan, Benjamin Lessing, and Santiago Tobon
+#29692
+*17.* Firm Pay Dynamics
+<https://www.nber.org/papers/w29697?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Niklas Engbom, Christian Moser, and Jan Sauermann #29697
+*18.* Why Are Returns to Private Business Wealth So Dispersed?
+<https://www.nber.org/papers/w29705?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Corina Boar, Denis Gorea, and Virgiliu Midrigan #29705
+*19.* Economic Winners Versus Losers and the Unequal Pandemic Recession
+<https://www.nber.org/papers/w29713?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Fernando Cirelli and Mark Gertler #29713
+*20.* Have Recreational Marijuana Laws Undermined Public Health Progress on
+Adult Tobacco Use?
+<https://www.nber.org/papers/w29706?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Dhaval M. Dave, Yang Liang, Michael F. Pesko, Serena Phillips, and Joseph
+J. Sabia #29706
+*21.* When is TSLS Actually LATE?
+<https://www.nber.org/papers/w29709?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Christine Blandhol, John Bonney, Magne Mogstad, and Alexander Torgovitsky
+#29709
+*22.* A Goldilocks Theory of Fiscal Deficits
+<https://www.nber.org/papers/w29707?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Atif R. Mian, Ludwig Straub, and Amir Sufi #29707
+*23.* Traditional Supernatural Beliefs and Prosocial Behavior
+<https://www.nber.org/papers/w29695?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Etienne Le Rossignol, Sara Lowes, and Nathan Nunn #29695
+------------------------------
+*1.* Incentive-Compatible Critical Values
+<https://www.nber.org/papers/w29702?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Adam McCloskey and Pascal Michaillat #29702
+
+*Abstract:*
+
+Statistically significant results are more rewarded than insignificant
+ones, so researchers have the incentive to pursue statistical significance.
+Such p-hacking reduces the informativeness of hypothesis tests by making
+significant results much more common than they are supposed to be in the
+absence of true significance. To address this problem, we construct
+critical values of test statistics such that, if these values are used to
+determine significance, and if researchers optimally respond to these new
+significance standards, then significant results occur with the desired
+frequency. Such incentive-compatible critical values allow for p-hacking so
+they are larger than classical critical values. Using evidence from the
+social and medical sciences, we find that the incentive-compatible critical
+value for any test and any significance level is the classical critical
+value for the same test with approximately one fifth of the significance
+level=E2=80=94a form of Bonferroni correction! . For instance, for a z-test=
+ with a
+significance level of 5%, the incentive-compatible critical value is 2.31
+instead of 1.65 if the test is one-sided and 2.57 instead of 1.96 if the
+test is two-sided.
+
+
+*2.* Should We Have Automatic Triggers for Unemployment Benefit Duration
+And How Costly Would They Be?
+<https://www.nber.org/papers/w29703?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Gabriel Chodorow-Reich, Peter Ganong, and Jonathan Gruber #29703
+
+*Abstract:*
+
+We model automatic trigger policies for unemployment insurance by
+simulating a weekly panel of individual labor market histories, grouped by
+state. We reach three conclusions: (i) policies designed to trigger
+immediately at the onset of a recession result in benefit extensions that
+occur in less sick labor markets than the historical average for benefit
+extensions; (ii) the ad hoc extensions in the 2001 and 2007-09 recessions
+in total cover a similar number of additional weeks as common proposals for
+automatic triggers, but concentrate coverage more in weaker labor markets;
+(iii) compared to ex post policy, the cost of common proposals for
+automatic triggers is close to zero.
+
+
+*3.* Waiting for Capital: Dynamic Intermediation in Illiquid Markets
+<https://www.nber.org/papers/w29712?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Barney Hartman-Glaser, Simon Mayer, and Konstantin Milbradt #29712
+
+*Abstract:*
+
+We consider a firm with infrequent access to capital markets, continuous
+access to financing by a risk-averse intermediary, and a cost of holding
+cash. The intermediary absorbs a fraction of cash-flow risk that decreases
+with the firm=E2=80=99s liquidity reserves and acquires a stake in the firm=
+ under
+distress. Implementing the optimal contract suggests an overlapping pecking
+order. The firm simultaneously finances shortfalls with cash reserves and a
+credit line and sells equity to the intermediary when it runs out of cash.
+The model helps explain empirical facts and trends in financial
+intermediation, such as the rise of private equity.
+
+
+*4.* Addressing Endogeneity Using a Two-stage Copula Generated Regressor
+Approach
+<https://www.nber.org/papers/w29708?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Fan Yang, Yi Qian, and Hui Xie #29708
+
+*Abstract:*
+
+A prominent challenge when drawing causal inference using observational
+data is the ubiquitous presence of endogenous regressors. The classical
+econometric method to handle regressor endogeneity requires instrumental
+variables that must satisfy the stringent condition of exclusion
+restriction, making it infeasible to use in many settings. We propose new
+instrument-free methods using copulas to address the endogeneity problem.
+The existing copula correction method focuses only on the endogenous
+regressors and may yield biased estimates when exogenous and endogenous
+regressors are correlated. Furthermore, (nearly) normally distributed
+endogenous regressors cause model non-identification or finite-sample poor
+performance. Our proposed two-stage copula endogeneity correction (2sCOPE)
+method simultaneously overcomes the two key limitations and yields
+consistent causal-effect estimates with correlated endogenous and exogenous
+regressors as well as normally distributed endogenous r! egressors. 2sCOPE
+employs generated regressors derived from existing regressors to control
+for endogeneity, and is straightforward to use and broadly applicable.
+Moreover, we prove that exploiting correlated exogenous regressors can
+address the problem of insufficient regressor non-normality, relax
+identification requirements and improve estimation precision (by as much as
+=E2=88=BC50% in empirical evaluation). Overall, 2sCOPE can greatly increase=
+ the
+ease of and broaden the applicability of instrument-free methods for
+dealing with regressor endogeneity. We demonstrate the performance of
+2sCOPE via simulation studies and an empirical application.
+
+
+*5.* Two-Way Fixed Effects and Differences-in-Differences with
+Heterogeneous Treatment Effects: A Survey
+<https://www.nber.org/papers/w29691?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Cl=C3=A9ment de Chaisemartin and Xavier D'Haultfoeuille #29691
+
+*Abstract:*
+
+Linear regressions with period and group fixed effects are widely used to
+estimate policies' effects: 26 of the 100 most cited papers published by
+the American Economic Review from 2015 to 2019 estimate such regressions.
+It has recently been show that those regressions may produce misleading
+estimates, if the policy's effect is heterogeneous between groups or over
+time, as is often the case. This survey reviews a fast-growing literature
+that documents this issue, and that proposes alternative estimators robust
+to heterogeneous effects.
+
+
+*6.* Education and Income Gradients in Longevity: The Role of Policy
+<https://www.nber.org/papers/w29694?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Adriana Lleras-Muney #29694
+
+*Abstract:*
+
+Education and income are strong predictors of health and longevity. In the
+last 20 years many efforts have been made to understand if these
+relationships are causal and what the possible role of policy should be as
+a result. The evidence from various studies is ambiguous: the effects of
+education and income policies on health are heterogeneous and vary over
+time, and across places and populations. I discuss explanations for these
+disparate results and suggest directions for future research.
+
+
+*7.* The (Un)Importance of Inheritance
+<https://www.nber.org/papers/w29693?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Sandra E. Black, Paul J. Devereux, Fanny Landaud, and Kjell G. Salvanes
+#29693
+
+*Abstract:*
+
+Transfers from parents=E2=80=94either in the form of gifts or inheritances=
+=E2=80=94have
+received much attention as a source of inequality. This paper uses a
+19-year panel of administrative data for the population of Norway to
+examine the share of the Total Inflows available to an individual (defined
+as the capitalized sum of net labor income, government transfers, and gifts
+and inheritances received over the period) accounted for by capitalized
+gifts and inheritances. Perhaps surprisingly, we find that gifts and
+inheritances represent a small share of Total Inflows; this is true across
+the distribution of Total Inflows, as well as at all levels of net wealth
+at a point in time. Gifts and inheritances are only an important source of
+income flows among those who have very wealthy parents. Additionally, gifts
+and inheritances have very little effect on the distribution of Total
+Inflows =E2=80=93 when we do a counterfactual Total Inflows distribution wi=
+th zero
+gifts and inheritances, it is not ! much different from the actual
+distribution. Our findings suggest that inheritance taxes may do little to
+mitigate the extreme wealth inequality in society.
+
+
+*8.* Currency Undervaluation and Comparative Advantage
+<https://www.nber.org/papers/w29699?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Paul Bergin #29699
+
+*Abstract:*
+
+This paper highlights a tradeoff implied by a policy of export-led growth
+through currency undervaluation. While undervaluation can foster domestic
+manufacturing in countries like China by sustaining trade surplus, it also
+can harm a country=E2=80=99s comparative advantage by altering the composit=
+ion of
+exports. Undervaluation may discourage specializing in high-value added
+manufacturing and instead favor specialization in non-differentiated goods
+with higher price elasticity. A dynamic general equilibrium model of two
+traded good sectors and capital account restrictions shows that
+undervaluation can either raise or lower welfare depending on two competing
+effects on comparative advantage: agglomeration versus an elasticity
+effect.
+
+
+*9.* Making Money
+<https://www.nber.org/papers/w29710?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Gary B. Gorton, Chase P. Ross, and Sharon Y. Ross #29710
+
+*Abstract:*
+
+It is difficult for private agents to produce money that circulates at par
+with no questions asked. We study two cases of privately-produced money:
+pre-Civil War U.S. private banknotes and modern stablecoins. Private monies
+are introduced when there are no better alternatives, but they initially
+carry an inconvenience yield. Over time, these monies may become more
+money-like, but they do not always achieve a positive convenience yield.
+Technology advances and reputation formation pushed private banknotes
+toward a positive convenience yield. We show that the same forces are at
+work for stablecoins.
+
+
+*10.* Ageing and Welfare-State Policy: Macroeconomic Perspective
+<https://www.nber.org/papers/w29700?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Assaf Razin and Alexander Horst Schwemmer #29700
+
+*Abstract:*
+
+It has been well recognized that population ageing could generate
+structural changes centered around the dwindling labor force, on one hand,
+and the expanding dependency on the generosity of the welfare state, on the
+other hand. Ageing-related welfare state policy entails both fiscal issues
+and migration issues. The paper employs a general-equilibrium model with a
+policy-making focus, to help understand the mechanism governing the
+provision of social benefits, labor income taxation, capital income
+taxation, migration curbs on low skilled and high skilled, driven by the
+ageing of the population. Greater generosity of the welfare state comes
+together with policy-- incentive compatible with the interests of the
+majority voters-- of a more liberal migration policy. Effects of ageing on
+the tax and benefit sides of the welfare state depends on the size of
+dependents in the population and on whether the country is a capital
+importer (in which case the capital tax burden is sha! red with foreigners)
+or a capital exporter (in which case the age-related wage increase skews
+taxation towards labor income). Low ageing evolution correlates with a
+relatively labor-abundant country (low retirement) turns into labor-scarce
+country (high retirement). Parallel to the evolution of the labor force, a
+capital-importer country (high rate of return) becomes capital-exporter
+(low rate of return). Greater ageing-related demand for social benefits is
+balanced against the rising cost of labor income taxation, and capital
+income taxation.
+
+
+*11.* Expectations Formation and Forward Information
+<https://www.nber.org/papers/w29711?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Nathan Goldstein and Yuriy Gorodnichenko #29711
+
+*Abstract:*
+
+We propose a model where forecasters have access to noisy signals about the
+future (forward information). In this setting, information varies not only
+across agents but also across horizons. As a result, estimated persistence
+of forecasts deviates from persistence of fundamentals and the ability of
+forecasts at shorter horizons to explain forecasts at longer horizons is
+limited. These properties tend to diminish as the forecast horizon
+increases. We document that this novel pattern is consistent with survey
+data for professional forecasters. We provide further evidence that
+time-series and cross-sectional variation in professional forecasts is
+driven by forward information. We propose a simple method for extracting
+the forward information component from survey and provide several
+applications of forward information.
+
+
+*12.* Idiosyncratic Income Risk and Aggregate Fluctuations
+<https://www.nber.org/papers/w29704?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Davide Debortoli and Jordi Gal=C3=AD #29704
+
+*Abstract:*
+
+We study the role of idiosyncratic income shocks for aggregate fluctuations
+within a simple heterogeneous household framework with no binding borrowing
+constraints. We show that the presence of idiosyncratic income shocks
+affects the economy=E2=80=99s response to an aggregate shock in a way that =
+can be
+captured by a consumption weighted average of the changes in uncertainty
+generated by the shock. We apply this framework to two example economies
+=E2=80=94an endowment economy and a New Keynesian economy=E2=80=94 and show=
+ that under
+plausible calibrations the impact of idiosyncratic income shocks on
+aggregate fluctuations is quantitatively small, since most of the changes
+in uncertainty are concentrated among poorer (low consumption) households.
+
+
+*13.* Does Quitting Smoking Increase Obesity? Evidence From Accounting for
+Misreporting
+<https://www.nber.org/papers/w29701?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Rusty Tchernis, Keith F. Teltser, and Arjun Teotia #29701
+
+*Abstract:*
+
+Smoking and obesity are the two leading causes of preventable deaths in the
+United States. Because smoking is subject to heavy government intervention,
+understanding the effect of smoking on obesity is important in determining
+the extent of unintended costs or benefits of such intervention. The
+existing literature on this question is mixed among studies using
+experimental and observational data, which we attempt to reconcile by
+accounting for misreporting in observational data. We use self-reported
+data from the Behavioral Risk Factor Surveillance System (BRFSS), cigarette
+taxes to instrument for changes in smoking, and survey completion to
+instrument for misreporting. Starting with the baseline two-stage least
+squares (2SLS) estimator common in the earlier observational literature, we
+obtain similar estimates suggesting quitting smoking substantially reduces
+BMI. However, we find the results are sensitive to specification,
+functional form, and the presence of misreporting. ! We show that
+accounting for misreporting using the 2-step estimator developed by
+Nguimkeu et al. (2019) yields estimates consistent with the experimental
+literature; quitting smoking has a small positive effect on BMI. Our
+preferred estimate suggests reduced smoking accounts for 6% of the
+concurrent rise in obesity.
+
+
+*14.* Labor Market Fluidity and Human Capital Accumulation
+<https://www.nber.org/papers/w29698?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Niklas Engbom #29698
+
+*Abstract:*
+
+Using panel data from 23 OECD countries, I document that wages grow more
+over the life-cycle in countries where job-to-job mobility is more common.
+A life-cycle theory of job shopping and accumulation of skills on the job
+highlights that a more fluid labor market allows workers to faster relocate
+to jobs where they can better use their skills, incentivizing accumulation
+of skills. Lower labor market fluidity reduces life-cycle wage growth by 20
+percent and aggregate labor productivity by nine percent across the OECD
+relative to the US. I derive a set of testable predictions for training and
+confront them with comparable cross-country training data, finding support
+for the theory.
+
+
+*15.* Earnings Inequality and Dynamics in the Presence of Informality: The
+Case of Brazil
+<https://www.nber.org/papers/w29696?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Niklas Engbom, Gustavo Gonzaga, Christian Moser, and Roberta Olivieri
+#29696
+
+*Abstract:*
+
+Using rich administrative and household survey data spanning 34 years from
+1985 to 2018, we document a series of new facts on earnings inequality and
+dynamics in a developing country with a large informal sector: Brazil.
+Since the mid-1990s, both inequality and volatility of earnings have
+declined significantly in Brazil=E2=80=99s formal sector. Higher-order mome=
+nts of
+the distribution of earnings changes show cyclical movements in Brazil that
+are similar to those in developed countries like the US. Relative to the
+formal sector, the informal sector is associated with a significant
+earnings penalty and higher earnings volatility for identical workers.
+Earnings changes of workers who switch from formal to informal (from
+informal to formal) employment are relatively negative (positive) and large
+in magnitude, dispersed, negatively (positively) skewed, and less
+leptokurtic. Our results suggest that informal employment is an imperfect
+insurance mechanism.
+
+
+*16.* State-building on the Margin: An Urban Experiment in Medell=C3=ADn
+<https://www.nber.org/papers/w29692?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Christopher Blattman, Gustavo Duncan, Benjamin Lessing, and Santiago Tobon
+#29692
+
+*Abstract:*
+
+Medell=C3=ADn's government wanted to raise its efficacy, legitimacy, and
+control. The city identified 80 neighborhoods with weak state presence and
+competing armed actors. In half, they increased non-police street presence
+tenfold for two years, offering social services and dispute resolution. In
+places where the state was initially weakest, the intervention did not
+work, mainly because the government struggled to deliver on its promises.
+Where the state began stronger, the government raised opinions of its
+services and legitimacy. If there are indeed low marginal returns to
+investing in capacity in the least-governed areas, this could produce
+increasing returns to state-building.
+
+
+*17.* Firm Pay Dynamics
+<https://www.nber.org/papers/w29697?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Niklas Engbom, Christian Moser, and Jan Sauermann #29697
+
+*Abstract:*
+
+We study the nature of firm pay dynamics. To this end, we propose a
+statistical model that extends the seminal framework by Abowd, Kramarz and
+Margolis (1999) to allow for idiosyncratically time-varying firm pay
+policies. We estimate the model using linked employer-employee data for
+Sweden from 1985 to 2016. By drawing on detailed firm financials data, we
+show that firms that become more productive and accumulate capital raise
+pay, whereas firms lower pay as they add workers. A secular increase in
+firm-year pay dispersion in Sweden since 1985 is accounted for by greater
+persistence of firm pay among incumbent firms as well as greater dispersion
+in firm pay among entrant firms, as opposed to more volatile firm pay.
+
+
+*18.* Why Are Returns to Private Business Wealth So Dispersed?
+<https://www.nber.org/papers/w29705?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Corina Boar, Denis Gorea, and Virgiliu Midrigan #29705
+
+*Abstract:*
+
+We use micro data from Orbis on firm level balance sheets and income
+statements to document that accounting returns for privately held
+businesses are dispersed, persistent, and negatively correlated with firm
+equity. We also show that firms experience large, fat-tailed, and partly
+transitory changes in output that are not fully accompanied by changes in
+their capital stock and wage bill. This implies that capital and labor
+choices are risky, as fluctuations in output are accompanied by large
+changes in firm profits. We interpret this evidence using a model of
+entrepreneurial dynamics in which return heterogeneity can arise from both
+limited span of control, as well as from financial frictions which generate
+differences in financial returns to saving. The model matches the evidence
+on accounting returns and predicts that financial returns to saving are
+half as large and dispersed as accounting returns. Financial returns mostly
+reflect risk, as opposed to collateral constrai! nts which play a
+negligible role due to firms' unwillingness to expand and take on more
+risk.
+
+
+*19.* Economic Winners Versus Losers and the Unequal Pandemic Recession
+<https://www.nber.org/papers/w29713?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Fernando Cirelli and Mark Gertler #29713
+
+*Abstract:*
+
+As is well known, during the pandemic recession firms directly exposed to
+the virus, i.e. the =E2=80=9Ccontact=E2=80=9D sector, contracted sharply an=
+d recovered
+slowly relative to the rest of the economy. Less understood is how firms
+that =E2=80=9Cwon=E2=80=9D by offering safer substitutes for contact sector=
+ goods have
+affected this unequal downturn. Using both firm and industry data, we first
+construct disaggregated measures of revenue growth that distinguish between
+contact sector losers, contact sector winners, and the non-contact sector.
+We show that contact sector losers contracted roughly fifty percent more
+than the sector average, while winners grew. Further, forecast data
+suggests that the gap between winners and losers will persist at least
+through 2022. To explain this evidence, we then develop a simple three
+sector New Keynesian model with (i) a sector of firms that offers safe
+substitutes for risky contact sector goods and (ii) learning by doing.
+Overall, the model captures the unequal ! sectoral recession. It also
+accounts for inflation, including the sharp runup in 2021.
+
+
+*20.* Have Recreational Marijuana Laws Undermined Public Health Progress on
+Adult Tobacco Use?
+<https://www.nber.org/papers/w29706?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Dhaval M. Dave, Yang Liang, Michael F. Pesko, Serena Phillips, and Joseph
+J. Sabia #29706
+
+*Abstract:*
+
+Public health experts caution that legalization of recreational marijuana
+may normalize smoking and undermine the decades-long achievements of
+tobacco control policy. However, very little is known about the impact of
+recreational marijuana laws (RMLs) on adult tobacco use. Using information
+from four national datasets (National Survey of Drug Use and Health,
+Behavioral Risk Factor Surveillance System, Current Population
+Survey-Tobacco Use Supplements, and Population Assessment of Tobacco and
+Health) and dynamic difference-in-differences and discrete-time hazard
+approaches, we find little support for the hypothesis that RML enactment
+leads to increases in adult tobacco use. In the short-run, RMLs have no
+effect on tobacco use and in the medium-run, we find some evidence of a
+lagged reduction in tobacco use on the order of approximately 0.5 to 2
+percentage points. This finding generally persists across cigarettes and
+e-cigarettes, is robust to event-study analyses generate! d from estimators
+designed to expunge bias due to heterogeneous dynamic treatment effects,
+and persists in panel data-based survival analyses that account for
+consumption dynamics. We conclude that fears of adult tobacco-related
+public health costs from RMLs are, at least in the short- and medium-run,
+unfounded; instead, there may be important public health benefits from
+reductions in adult tobacco use.
+
+
+*21.* When is TSLS Actually LATE?
+<https://www.nber.org/papers/w29709?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Christine Blandhol, John Bonney, Magne Mogstad, and Alexander Torgovitsky
+#29709
+
+*Abstract:*
+
+Linear instrumental variable estimators, such as two-stage least squares
+(TSLS), are commonly interpreted as estimating positively weighted averages
+of causal effects, referred to as local average treatment effects (LATEs).
+We examine whether the LATE interpretation actually applies to the types of
+TSLS specifications that are used in practice. We show that if the
+specification includes covariates, which most empirical work does, then the
+LATE interpretation does not apply in general. Instead, the TSLS estimator
+will in general reflect treatment effects for both compliers and
+always/never-takers, and some of the treatment effects for the
+always/never-takers will necessarily be negatively weighted. We show that
+the only specifications that have a LATE interpretation are "saturated"
+specifications that control for covariates nonparametrically, implying that
+such specifications are both sufficient and necessary for TSLS to have a
+LATE interpretation, at least without additional! parametric assumptions.
+This result is concerning because, as we document, empirical researchers
+almost never control for covariates nonparametrically, and rarely discuss
+or justify parametric specifications of covariates. We develop a
+decomposition that quantifies the extent to which the usual LATE
+interpretation fails. We apply the decomposition to four empirical analyses
+and find strong evidence that the LATE interpretation of TSLS is far from
+accurate for the types of specifications actually used in practice.
+
+
+*22.* A Goldilocks Theory of Fiscal Deficits
+<https://www.nber.org/papers/w29707?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Atif R. Mian, Ludwig Straub, and Amir Sufi #29707
+
+*Abstract:*
+
+This paper proposes a tractable framework to analyze fiscal space and the
+dynamics of government debt, with a possibly binding zero lower bound (ZLB)
+constraint. Without the ZLB, a greater primary deficit unambiguously raises
+debt. However, debt need not explode: When R < G =E2=80=93 =CF=86, where =
+=CF=86 is the
+sensitivity of R =E2=80=93 G to debt, a modest permanent increase in the de=
+ficit
+can be sustained forever, a policy we call =E2=80=9Cfree lunch=E2=80=9D. Wi=
+th the ZLB, the
+relationship between deficit and debt can become non-monotone. Both high
+and low deficits can increase debt, as the latter weaken demand and reduce
+nominal growth at the ZLB. A rise in income inequality expands fiscal space
+outside the ZLB, but contracts it at the ZLB. Calibrating the model, we
+find little space for =E2=80=9Cfree lunch=E2=80=9D policies for the United =
+States in 2019,
+but ample space for Japan.
+
+
+*23.* Traditional Supernatural Beliefs and Prosocial Behavior
+<https://www.nber.org/papers/w29695?utm_campaign=3Dntwh&utm_medium=3Demail&=
+utm_source=3Dntwg15>
+Etienne Le Rossignol, Sara Lowes, and Nathan Nunn #29695
+
+*Abstract:*
+
+In sub-Saharan Africa, traditional supernatural beliefs, including belief
+in witchcraft, black magic, or fetishism, are widespread. Some have
+hypothesized that these beliefs help to sustain cooperative behavior in a
+setting where the state is often absent. Others have documented that, at
+least at a macro-level, such beliefs are negatively associated with
+prosocial behavior. We contribute to a better understanding of the causal
+effects of these traditional supernatural beliefs by using lab-in-the-field
+experiments in the Democratic Republic of the Congo. Participants complete
+a range of experimental tasks where one player chooses whether to act in a
+prosocial manner towards another player. Participants are randomly assigned
+to another player that has either a strong or weak belief in witchcraft,
+and this information is known by the players. We find that participants act
+less prosocially towards randomly-assigned partners who believe more
+strongly in witchcraft. We also find t! hat antisocial behavior is more
+socially acceptable and prosocial behavior less socially acceptable when
+playing with a partner who believes more strongly in witchcraft. Our
+findings suggest that the negative relationship between witchcraft and
+prosocial outcomes observed in the data may, in fact, be due to the causal
+effect of the presence of traditional supernatural beliefs on people=E2=80=
+=99s
+behavior.*
+
+
+Recipients of this weekly email may choose to be notified of all new
+Working Papers, or may filter them according to individual interests.
+
+You are being notified about All New Working Papers.
+
+You may tailor the email to your interests here
+<https://www.nber.org/ll?u=3Dkarin_li&p=3DjsWcOQ&url=3D%2Fprefs%2Fnotify>.
+Comments about the mailing may be sent to wp@nber.org .
+
+--0000000000001a788405d7015db1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:georgia,=
+serif;font-size:small">Hi Antonio and Andy, <br></div><div class=3D"gmail_d=
+efault" style=3D"font-family:georgia,serif;font-size:small"><br></div><div =
+class=3D"gmail_default" style=3D"font-family:georgia,serif;font-size:small"=
+>We will be discussing this email during our meeting. Essentially, we want =
+to see if you think we can make a script that would pull the names, title a=
+nd link to the paper if they match certain keywords and have it automatical=
+ly feed into an excel or google sheet.=C2=A0</div><div class=3D"gmail_defau=
+lt" style=3D"font-family:georgia,serif;font-size:small"><br></div><div clas=
+s=3D"gmail_default" style=3D"font-family:georgia,serif;font-size:small"><br=
+></div><div class=3D"gmail_default" style=3D"font-family:georgia,serif;font=
+-size:small">Thank you, <br></div><div class=3D"gmail_default" style=3D"fon=
+t-family:georgia,serif;font-size:small">Cynthia<br></div><br><div class=3D"=
+gmail_quote"><div dir=3D"ltr" class=3D"gmail_attr">---------- Forwarded mes=
+sage ---------<br>From: <b class=3D"gmail_sendername" dir=3D"auto">Karin Li=
+</b> <span dir=3D"auto">&lt;<a href=3D"mailto:likarin95@gmail.com">likarin9=
+5@gmail.com</a>&gt;</span><br>Date: Mon, Jan 31, 2022 at 12:50 PM<br>Subjec=
+t: Fwd: The Latest NBER Research (2022-01-31)<br>To: Cynthia Okita &lt;<a h=
+ref=3D"mailto:ciokita@berkeley.edu">ciokita@berkeley.edu</a>&gt;, Cathy Gar=
+za &lt;<a href=3D"mailto:cathy_garza@haas.berkeley.edu">cathy_garza@haas.be=
+rkeley.edu</a>&gt;<br></div><br><br><div dir=3D"ltr">Hi Cynthia, hi Cathy,<=
+div><br></div><div>here is an example-email from the NBER (for the working =
+papers, sent on a weekly basis).</div><div><br></div><div>Kind regards</div=
+><div>Karin</div><div><br><div class=3D"gmail_quote"><div dir=3D"ltr" class=
+=3D"gmail_attr">---------- Forwarded message ---------<br>Von: <span dir=3D=
+"auto">&lt;<a href=3D"mailto:karin_li@web.de" target=3D"_blank">karin_li@we=
+b.de</a>&gt;</span><br>Date: Mo., 31. Jan. 2022 um 21:22=C2=A0Uhr<br>Subjec=
+t: Fwd: The Latest NBER Research (2022-01-31)<br>To:  &lt;<a href=3D"mailto=
+:likarin95@gmail.com" target=3D"_blank">likarin95@gmail.com</a>&gt;<br></di=
+v><br><br>
+
+   =20
+
+
+
+    <div style=3D"margin-left:10px">
+        <div id=3D"m_4304924979733551350m_-15923191003812225488787634986986=
+720895ty" style=3D"overflow:hidden">
+            <div id=3D"m_4304924979733551350m_-1592319100381222548338317Edi=
+tableDivID--xx--yy--42" style=3D"font-family:Verdana;font-size:17px;color:b=
+lack">
+                <br><br><br><br>Anfang der weitergeleiteten E-Mail
+                <br><br>
+            </div>
+            <div>
+                <div style=3D"font-family:Verdana;font-size:17px;color:blac=
+k">
+                    Von: &quot;NBER&quot; &lt;<a href=3D"mailto:bulletin@nb=
+er.org" target=3D"_blank">bulletin@nber.org</a>&gt;<br>Datum: 31. Januar 20=
+22<br>An: <a href=3D"mailto:karin_li@web.de" target=3D"_blank">karin_li@web=
+.de</a><br>Cc: <br>Betreff: The Latest NBER Research (2022-01-31)
+                </div>
+               =20
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" bgco=
+lor=3D"#ffffff">
+  <tbody>
+  <tr>
+    <td valign=3D"top" align=3D"center">
+      <table width=3D"620" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+>
+        <tbody>
+        <tr>
+          <td style=3D"margin:0px;padding:30px 10px 40px;width:600px;line-h=
+eight:0pt;font-size:0pt;font-weight:normal;min-width:600px">
+            <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0">
+
+              =09=09=09=09=09=09=09=09=20
+              <tbody>
+              <tr>
+                <td style=3D"padding:18px 15px;text-align:center;line-heigh=
+t:0pt;font-size:0pt" bgcolor=3D"#005db9"><a href=3D"http://www.nber.org/" t=
+arget=3D"_blank"><img alt=3D"NBER HOME" src=3D"https://www.nber.org/sites/d=
+efault/files/2020-11/ntw_logo.jpg" width=3D"106" height=3D"26" border=3D"0"=
+></a></td>
+</tr>
+=09=09=09=09=09=09=09=09=20
+              =09=09=09=09=09=09=09=09=20
+              <tr>
+                <td style=3D"padding-bottom:10px">
+                  <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0">
+                    <tbody>
+                    <tr>
+                      <td style=3D"padding:20px 40px;border-bottom-color:rg=
+b(0,93,185);border-bottom-width:2px;border-bottom-style:solid" bgcolor=3D"#=
+f2f2f2">
+                        <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0">
+                          <tbody>
+                          <tr>
+                            <td style=3D"padding-bottom:32px">
+                              <table width=3D"100%" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0">
+                                <tbody>
+                                <tr>
+                                <th style=3D"margin:0px;padding:0px;line-he=
+ight:0pt;font-size:0pt;font-weight:normal" width=3D"260">
+                                <table width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0">
+                                <tbody>
+                                <tr>
+                                <td style=3D"text-align:left;color:rgb(72,7=
+2,72);line-height:18px;font-family:Arial,sans-serif;font-size:14px">
+January 31, 2022
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+                                <th style=3D"margin:0px;padding:0px;line-he=
+ight:0pt;font-size:0pt;font-weight:normal" width=3D"100">
+                                <table width=3D"100%" cellspacing=3D"0" cel=
+lpadding=3D"0" border=3D"0">
+                                <tbody>
+                                <tr>
+                                <td align=3D"right">
+                                <table cellspacing=3D"0" cellpadding=3D"0" =
+border=3D"0">
+                                <tbody>
+                                <tr>
+                                <td style=3D"text-align:left;line-height:0p=
+t;font-size:0pt" width=3D"35"><a href=3D"https://www.facebook.com/National-=
+Bureau-of-Economic-Research-115165771829285/" target=3D"_blank"><img alt=3D=
+"" src=3D"https://www.nber.org/sites/default/files/2020-11/facebook_round.j=
+pg" width=3D"30" height=3D"29" border=3D"0"></a></td>
+                                <td style=3D"text-align:left;line-height:0p=
+t;font-size:0pt" width=3D"30"><a href=3D"https://twitter.com/nberpubs" targ=
+et=3D"_blank"><img alt=3D"" src=3D"https://www.nber.org/sites/default/files=
+/2020-11/twitter_round.jpg" width=3D"30" height=3D"29" border=3D"0"></a></t=
+d>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+                          <tr>
+                            <td style=3D"text-align:left;color:rgb(67,67,67=
+);line-height:24px;padding-bottom:12px;font-family:Georgia,serif;font-size:=
+20px;font-weight:bold">New=20
+                              This Week: The Latest NBER Working Papers</td=
+>
+</tr>
+                          <tr>
+                            <td style=3D"text-align:left;color:rgb(109,110,=
+113);line-height:18px;padding-bottom:30px;font-family:Arial,sans-serif;font=
+-size:14px">The=20
+                              National Bureau of Economic Research circulat=
+es=20
+                              research by its affiliated economists as work=
+ing=20
+                              papers intended for professional and public=
+=20
+                              discussion and comment. The papers have not b=
+een=20
+                              peer reviewed.</td>
+</tr>
+
+
+
+
+
+                         <tr>
+                            <td>
+                              <table width=3D"100%" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0">
+                                <tbody>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>1.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29702?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Incentive-Compatible Critical Values<=
+/a><br>
+Adam McCloskey and Pascal Michaillat
+#29702
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>2.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29703?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Should We Have Automatic Triggers for=
+ Unemployment Benefit Duration And How Costly Would They Be?</a><br>
+Gabriel Chodorow-Reich, Peter Ganong, and Jonathan Gruber
+#29703
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>3.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29712?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Waiting for Capital: Dynamic Intermed=
+iation in Illiquid Markets</a><br>
+Barney Hartman-Glaser, Simon Mayer, and Konstantin Milbradt
+#29712
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>4.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29708?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Addressing Endogeneity Using a Two-st=
+age Copula Generated Regressor Approach</a><br>
+Fan Yang, Yi Qian, and Hui Xie
+#29708
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>5.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29691?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Two-Way Fixed Effects and Differences=
+-in-Differences with Heterogeneous Treatment Effects: A Survey</a><br>
+Cl=C3=A9ment de Chaisemartin and Xavier D&#39;Haultfoeuille
+#29691
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>6.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29694?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Education and Income Gradients in Lon=
+gevity: The Role of Policy</a><br>
+Adriana Lleras-Muney
+#29694
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>7.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29693?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">The (Un)Importance of Inheritance</a>=
+<br>
+Sandra E. Black, Paul J. Devereux, Fanny Landaud, and Kjell G. Salvanes
+#29693
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>8.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29699?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Currency Undervaluation and Comparati=
+ve Advantage</a><br>
+Paul Bergin
+#29699
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>9.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29710?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Making Money</a><br>
+Gary B. Gorton, Chase P. Ross, and Sharon Y. Ross
+#29710
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>10.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29700?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Ageing and Welfare-State Policy: Macr=
+oeconomic Perspective</a><br>
+Assaf Razin and Alexander Horst Schwemmer
+#29700
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>11.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29711?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Expectations Formation and Forward In=
+formation</a><br>
+Nathan Goldstein and Yuriy Gorodnichenko
+#29711
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>12.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29704?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Idiosyncratic Income Risk and Aggrega=
+te Fluctuations</a><br>
+Davide Debortoli and Jordi Gal=C3=AD
+#29704
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>13.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29701?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Does Quitting Smoking Increase Obesit=
+y? Evidence From Accounting for Misreporting</a><br>
+Rusty Tchernis, Keith F. Teltser, and Arjun Teotia
+#29701
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>14.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29698?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Labor Market Fluidity and Human Capit=
+al Accumulation</a><br>
+Niklas Engbom
+#29698
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>15.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29696?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Earnings Inequality and Dynamics in t=
+he Presence of Informality: The Case of Brazil</a><br>
+Niklas Engbom, Gustavo Gonzaga, Christian Moser, and Roberta Olivieri
+#29696
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>16.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29692?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">State-building on the Margin: An Urba=
+n Experiment in Medell=C3=ADn</a><br>
+Christopher Blattman, Gustavo Duncan, Benjamin Lessing, and Santiago Tobon
+#29692
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>17.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29697?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Firm Pay Dynamics</a><br>
+Niklas Engbom, Christian Moser, and Jan Sauermann
+#29697
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>18.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29705?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Why Are Returns to Private Business W=
+ealth So Dispersed?</a><br>
+Corina Boar, Denis Gorea, and Virgiliu Midrigan
+#29705
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>19.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29713?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Economic Winners Versus Losers and th=
+e Unequal Pandemic Recession</a><br>
+Fernando Cirelli and Mark Gertler
+#29713
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>20.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29706?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Have Recreational Marijuana Laws Unde=
+rmined Public Health Progress on Adult Tobacco Use?</a><br>
+Dhaval M. Dave, Yang Liang, Michael F. Pesko, Serena Phillips, and Joseph J=
+. Sabia
+#29706
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>21.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29709?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">When is TSLS Actually LATE?</a><br>
+Christine Blandhol, John Bonney, Magne Mogstad, and Alexander Torgovitsky
+#29709
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>22.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29707?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">A Goldilocks Theory of Fiscal Deficit=
+s</a><br>
+Atif R. Mian, Ludwig Straub, and Amir Sufi
+#29707
+
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>23.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px;padding-bottom:12px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29695?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Traditional Supernatural Beliefs and =
+Prosocial Behavior</a><br>
+Etienne Le Rossignol, Sara Lowes, and Nathan Nunn
+#29695
+
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td style=3D"padding-bottom:24px;padding-top:24px">
+<hr color=3D"#005db9">
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>1.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29702?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Incentive-Compatible Critical Values<=
+/a><br>
+Adam McCloskey and Pascal Michaillat
+#29702
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Statistically significant results are more rewarded than insignificant ones=
+, so researchers have the incentive to pursue statistical significance. Suc=
+h p-hacking reduces the informativeness of hypothesis tests by making signi=
+ficant results much more common than they are supposed to be in the absence=
+ of true significance. To address this problem, we construct critical value=
+s of test statistics such that, if these values are used to determine signi=
+ficance, and if researchers optimally respond to these new significance sta=
+ndards, then significant results occur with the desired frequency. Such inc=
+entive-compatible critical values allow for p-hacking so they are larger th=
+an classical critical values. Using evidence from the social and medical sc=
+iences, we find that the incentive-compatible critical value for any test a=
+nd any significance level is the classical critical value for the same test=
+ with approximately one fifth of the significance level=E2=80=94a form of B=
+onferroni correction!
+ . For instance, for a z-test with a significance level of 5%, the incentiv=
+e-compatible critical value is 2.31 instead of 1.65 if the test is one-side=
+d and 2.57 instead of 1.96 if the test is two-sided.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>2.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29703?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Should We Have Automatic Triggers for=
+ Unemployment Benefit Duration And How Costly Would They Be?</a><br>
+Gabriel Chodorow-Reich, Peter Ganong, and Jonathan Gruber
+#29703
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+We model automatic trigger policies for unemployment insurance by simulatin=
+g a weekly panel of individual labor market histories, grouped by state. We=
+ reach three conclusions: (i) policies designed to trigger immediately at t=
+he onset of a recession result in benefit extensions that occur in less sic=
+k labor markets than the historical average for benefit extensions; (ii) th=
+e ad hoc extensions in the 2001 and 2007-09 recessions in total cover a sim=
+ilar number of additional weeks as common proposals for automatic triggers,=
+ but concentrate coverage more in weaker labor markets; (iii) compared to e=
+x post policy, the cost of common proposals for automatic triggers is close=
+ to zero.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>3.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29712?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Waiting for Capital: Dynamic Intermed=
+iation in Illiquid Markets</a><br>
+Barney Hartman-Glaser, Simon Mayer, and Konstantin Milbradt
+#29712
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+We consider a firm with infrequent access to capital markets, continuous ac=
+cess to financing by a risk-averse intermediary, and a cost of holding cash=
+. The intermediary absorbs a fraction of cash-flow risk that decreases with=
+ the firm=E2=80=99s liquidity reserves and acquires a stake in the firm und=
+er distress. Implementing the optimal contract suggests an overlapping peck=
+ing order. The firm simultaneously finances shortfalls with cash reserves a=
+nd a credit line and sells equity to the intermediary when it runs out of c=
+ash. The model helps explain empirical facts and trends in financial interm=
+ediation, such as the rise of private equity.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>4.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29708?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Addressing Endogeneity Using a Two-st=
+age Copula Generated Regressor Approach</a><br>
+Fan Yang, Yi Qian, and Hui Xie
+#29708
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+A prominent challenge when drawing causal inference using observational dat=
+a is the ubiquitous presence of endogenous regressors. The classical econom=
+etric method to handle regressor endogeneity requires instrumental variable=
+s that must satisfy the stringent condition of exclusion restriction, makin=
+g it infeasible to use in many settings. We propose new instrument-free met=
+hods using copulas to address the endogeneity problem. The existing copula =
+correction method focuses only on the endogenous regressors and may yield b=
+iased estimates when exogenous and endogenous regressors are correlated. Fu=
+rthermore, (nearly) normally distributed endogenous regressors cause model =
+non-identification or finite-sample poor performance. Our proposed two-stag=
+e copula endogeneity correction (2sCOPE) method simultaneously overcomes th=
+e two key limitations and yields consistent causal-effect estimates with co=
+rrelated endogenous and exogenous regressors as well as normally distribute=
+d endogenous r!
+ egressors. 2sCOPE employs generated regressors derived from existing regre=
+ssors to control for endogeneity, and is straightforward to use and broadly=
+ applicable. Moreover, we prove that exploiting correlated exogenous regres=
+sors can address the problem of insufficient regressor non-normality, relax=
+ identification requirements and improve estimation precision (by as much a=
+s =E2=88=BC50% in empirical evaluation). Overall, 2sCOPE can greatly increa=
+se the ease of and broaden the applicability of instrument-free methods for=
+ dealing with regressor endogeneity. We demonstrate the performance of 2sCO=
+PE via simulation studies and an empirical application.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>5.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29691?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Two-Way Fixed Effects and Differences=
+-in-Differences with Heterogeneous Treatment Effects: A Survey</a><br>
+Cl=C3=A9ment de Chaisemartin and Xavier D&#39;Haultfoeuille
+#29691
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Linear regressions with period and group fixed effects are widely used to e=
+stimate policies&#39; effects: 26 of the 100 most cited papers published by=
+ the American Economic Review from 2015 to 2019 estimate such regressions. =
+It has recently been show that those regressions may produce misleading est=
+imates, if the policy&#39;s effect is heterogeneous between groups or over =
+time, as is often the case. This survey reviews a fast-growing literature t=
+hat documents this issue, and that proposes alternative estimators robust t=
+o heterogeneous effects.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>6.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29694?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Education and Income Gradients in Lon=
+gevity: The Role of Policy</a><br>
+Adriana Lleras-Muney
+#29694
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Education and income are strong predictors of health and longevity. In the =
+last 20 years many efforts have been made to understand if these relationsh=
+ips are causal and what the possible role of policy should be as a result. =
+The evidence from various studies is ambiguous: the effects of education an=
+d income policies on health are heterogeneous and vary over time, and acros=
+s places and populations. I discuss explanations for these disparate result=
+s and suggest directions for future research.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>7.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29693?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">The (Un)Importance of Inheritance</a>=
+<br>
+Sandra E. Black, Paul J. Devereux, Fanny Landaud, and Kjell G. Salvanes
+#29693
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Transfers from parents=E2=80=94either in the form of gifts or inheritances=
+=E2=80=94have received much attention as a source of inequality. This paper=
+ uses a 19-year panel of administrative data for the population of Norway t=
+o examine the share of the Total Inflows available to an individual (define=
+d as the capitalized sum of net labor income, government transfers, and gif=
+ts and inheritances received over the period) accounted for by capitalized =
+gifts and inheritances.  Perhaps surprisingly, we find that gifts and inher=
+itances represent a small share of Total Inflows; this is true across the d=
+istribution of Total Inflows, as well as at all levels of net wealth at a p=
+oint in time.  Gifts and inheritances are only an important source of incom=
+e flows among those who have very wealthy parents. Additionally, gifts and =
+inheritances have very little effect on the distribution of Total Inflows =
+=E2=80=93 when we do a counterfactual Total Inflows distribution with zero =
+gifts and inheritances, it is not !
+ much different from the actual distribution. Our findings suggest that inh=
+eritance taxes may do little to mitigate the extreme wealth inequality in s=
+ociety.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>8.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29699?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Currency Undervaluation and Comparati=
+ve Advantage</a><br>
+Paul Bergin
+#29699
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+This paper highlights a tradeoff implied by a policy of export-led growth t=
+hrough currency undervaluation. While undervaluation can foster domestic ma=
+nufacturing in countries like China by sustaining trade surplus, it also ca=
+n harm a country=E2=80=99s comparative advantage by altering the compositio=
+n of exports. Undervaluation may discourage specializing in high-value adde=
+d manufacturing and instead favor specialization in non-differentiated good=
+s with higher price elasticity. A dynamic general equilibrium model of two =
+traded good sectors and capital account restrictions shows that undervaluat=
+ion can either raise or lower welfare depending on two competing effects on=
+ comparative advantage: agglomeration versus an elasticity effect.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>9.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29710?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Making Money</a><br>
+Gary B. Gorton, Chase P. Ross, and Sharon Y. Ross
+#29710
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+It is difficult for private agents to produce money that circulates at par =
+with no questions asked. We study two cases of privately-produced money: pr=
+e-Civil War U.S. private banknotes and modern stablecoins. Private monies a=
+re introduced when there are no better alternatives, but they initially car=
+ry an inconvenience yield. Over time, these monies may become more money-li=
+ke, but they do not always achieve a positive convenience yield. Technology=
+ advances and reputation formation pushed private banknotes toward a positi=
+ve convenience yield. We show that the same forces are at work for stableco=
+ins.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>10.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29700?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Ageing and Welfare-State Policy: Macr=
+oeconomic Perspective</a><br>
+Assaf Razin and Alexander Horst Schwemmer
+#29700
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+It has been well recognized that population ageing could generate structura=
+l changes centered around the dwindling labor force, on one hand, and the e=
+xpanding dependency on the generosity of the welfare state, on the other ha=
+nd. Ageing-related welfare state policy entails both fiscal issues and migr=
+ation issues. The paper employs a general-equilibrium model with a policy-m=
+aking focus, to help  understand the  mechanism governing the provision of =
+social benefits, labor income taxation, capital income taxation, migration =
+curbs on low skilled and high skilled, driven by the ageing of the  populat=
+ion. Greater generosity of the welfare state comes together with policy-- i=
+ncentive compatible with the interests of the majority voters-- of a more l=
+iberal migration policy. Effects of ageing on the tax and benefit sides of =
+the welfare state depends on the size of dependents in the population and o=
+n whether the country is a capital importer (in which case  the capital tax=
+ burden is sha!
+ red with foreigners) or a capital exporter (in which case the age-related =
+wage increase skews taxation towards labor income). Low ageing evolution co=
+rrelates with a relatively labor-abundant country (low retirement) turns in=
+to labor-scarce country (high retirement). Parallel to the evolution of the=
+ labor force, a capital-importer country (high rate of return) becomes capi=
+tal-exporter (low rate of return). Greater ageing-related demand for social=
+ benefits is balanced against the rising cost of labor income taxation, and=
+ capital income taxation.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>11.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29711?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Expectations Formation and Forward In=
+formation</a><br>
+Nathan Goldstein and Yuriy Gorodnichenko
+#29711
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+We propose a model where forecasters have access to noisy signals about the=
+ future (forward information). In this setting, information varies not only=
+ across agents but also across horizons. As a result, estimated persistence=
+ of forecasts deviates from persistence of fundamentals and the ability of =
+forecasts at shorter horizons to explain forecasts at longer horizons is li=
+mited. These properties tend to diminish as the forecast horizon increases.=
+ We document that this novel pattern is consistent with survey data for pro=
+fessional forecasters. We provide further evidence that time-series and cro=
+ss-sectional variation in professional forecasts is driven by forward infor=
+mation. We propose a simple method for extracting the forward information c=
+omponent from survey and provide several applications of forward informatio=
+n.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>12.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29704?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Idiosyncratic Income Risk and Aggrega=
+te Fluctuations</a><br>
+Davide Debortoli and Jordi Gal=C3=AD
+#29704
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+We study the role of idiosyncratic income shocks for aggregate fluctuations=
+ within a simple heterogeneous household framework with no binding borrowin=
+g constraints. We show that the presence of idiosyncratic income shocks aff=
+ects the economy=E2=80=99s response to an aggregate shock in a way that can=
+ be captured by a consumption weighted average of the changes in uncertaint=
+y generated by the shock. We apply this framework to two example economies =
+=E2=80=94an endowment economy and a New Keynesian economy=E2=80=94 and show=
+ that under plausible calibrations the impact of idiosyncratic income shock=
+s on aggregate fluctuations is quantitatively small, since most of the chan=
+ges in uncertainty are concentrated among poorer (low consumption) househol=
+ds.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>13.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29701?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Does Quitting Smoking Increase Obesit=
+y? Evidence From Accounting for Misreporting</a><br>
+Rusty Tchernis, Keith F. Teltser, and Arjun Teotia
+#29701
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Smoking and obesity are the two leading causes of preventable deaths in the=
+ United States. Because smoking is subject to heavy government intervention=
+, understanding the effect of smoking on obesity is important in determinin=
+g the extent of unintended costs or benefits of such intervention. The exis=
+ting literature on this question is mixed among studies using experimental =
+and observational data, which we attempt to reconcile by accounting for mis=
+reporting in observational data. We use self-reported data from the Behavio=
+ral Risk Factor Surveillance System (BRFSS), cigarette taxes to instrument =
+for changes in smoking, and survey completion to instrument for misreportin=
+g. Starting with the baseline two-stage least squares (2SLS) estimator comm=
+on in the earlier observational literature, we obtain similar estimates sug=
+gesting quitting smoking substantially reduces BMI. However, we find the re=
+sults are sensitive to specification, functional form, and the presence of =
+misreporting. !
+ We show that accounting for misreporting using the 2-step estimator develo=
+ped by Nguimkeu et al. (2019) yields estimates consistent with the experime=
+ntal literature; quitting smoking has a small positive effect on BMI. Our p=
+referred estimate suggests reduced smoking accounts for 6% of the concurren=
+t rise in obesity.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>14.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29698?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Labor Market Fluidity and Human Capit=
+al Accumulation</a><br>
+Niklas Engbom
+#29698
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Using panel data from 23 OECD countries, I document that wages grow more ov=
+er the life-cycle in countries where job-to-job mobility is more common. A =
+life-cycle theory of job shopping and accumulation of skills on the job hig=
+hlights that a more fluid labor market allows workers to faster relocate to=
+ jobs where they can better use their skills, incentivizing accumulation of=
+ skills. Lower labor market fluidity reduces life-cycle wage growth by 20 p=
+ercent and aggregate labor productivity by nine percent across the OECD rel=
+ative to the US. I derive a set of testable predictions for training and co=
+nfront them with comparable cross-country training data, finding support fo=
+r the theory.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>15.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29696?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Earnings Inequality and Dynamics in t=
+he Presence of Informality: The Case of Brazil</a><br>
+Niklas Engbom, Gustavo Gonzaga, Christian Moser, and Roberta Olivieri
+#29696
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Using rich administrative and household survey data spanning 34 years from =
+1985 to 2018, we document a series of new facts on earnings inequality and =
+dynamics in a developing country with a large informal sector: Brazil. Sinc=
+e the mid-1990s, both inequality and volatility of earnings have declined s=
+ignificantly in Brazil=E2=80=99s formal sector. Higher-order moments of the=
+ distribution of earnings changes show cyclical movements in Brazil that ar=
+e similar to those in developed countries like the US. Relative to the form=
+al sector, the informal sector is associated with a significant earnings pe=
+nalty and higher earnings volatility for identical workers. Earnings change=
+s of workers who switch from formal to informal (from informal to formal) e=
+mployment are relatively negative (positive) and large in magnitude, disper=
+sed, negatively (positively) skewed, and less leptokurtic. Our results sugg=
+est that informal employment is an imperfect insurance mechanism.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>16.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29692?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">State-building on the Margin: An Urba=
+n Experiment in Medell=C3=ADn</a><br>
+Christopher Blattman, Gustavo Duncan, Benjamin Lessing, and Santiago Tobon
+#29692
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Medell=C3=ADn&#39;s government wanted to raise its efficacy, legitimacy, an=
+d control. The city identified 80 neighborhoods with weak state presence an=
+d competing armed actors. In half, they increased non-police street presenc=
+e tenfold for two years, offering social services and dispute resolution. I=
+n places where the state was initially weakest, the intervention did not wo=
+rk, mainly because the government struggled to deliver on its promises. Whe=
+re the state began stronger, the government raised opinions of its services=
+ and legitimacy. If there are indeed low marginal returns to investing in c=
+apacity in the least-governed areas, this could produce increasing returns =
+to state-building.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>17.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29697?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Firm Pay Dynamics</a><br>
+Niklas Engbom, Christian Moser, and Jan Sauermann
+#29697
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+We study the nature of firm pay dynamics. To this end, we propose a statist=
+ical model that extends the seminal framework by Abowd, Kramarz and Margoli=
+s (1999) to allow for idiosyncratically time-varying firm pay policies. We =
+estimate the model using linked employer-employee data for Sweden from 1985=
+ to 2016. By drawing on detailed firm financials data, we show that firms t=
+hat become more productive and accumulate capital raise pay, whereas firms =
+lower pay as they add workers. A secular increase in firm-year pay dispersi=
+on in Sweden since 1985 is accounted for by greater persistence of firm pay=
+ among incumbent firms as well as greater dispersion in firm pay among entr=
+ant firms, as opposed to more volatile firm pay.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>18.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29705?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Why Are Returns to Private Business W=
+ealth So Dispersed?</a><br>
+Corina Boar, Denis Gorea, and Virgiliu Midrigan
+#29705
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+We  use micro data from Orbis on firm level balance sheets and income state=
+ments to document that accounting returns for privately held businesses are=
+ dispersed, persistent, and negatively correlated with firm equity. We also=
+ show that firms experience large, fat-tailed, and partly transitory change=
+s in output that are not fully accompanied by changes in their capital stoc=
+k and wage bill. This implies that capital and labor choices are risky, as =
+fluctuations in output are accompanied by large changes in firm profits. We=
+ interpret this evidence using a model of entrepreneurial dynamics in which=
+ return heterogeneity can arise from both limited span of control, as well =
+as from financial frictions which generate differences in financial returns=
+ to saving. The model matches the evidence on accounting returns  and predi=
+cts that financial returns to saving are half as large and dispersed as acc=
+ounting returns. Financial returns mostly reflect risk, as opposed to colla=
+teral constrai!
+ nts which play a negligible role due to  firms&#39; unwillingness to expan=
+d and take on more risk.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>19.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29713?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Economic Winners Versus Losers and th=
+e Unequal Pandemic Recession</a><br>
+Fernando Cirelli and Mark Gertler
+#29713
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+As is well known, during the pandemic recession firms directly exposed to t=
+he virus, i.e. the =E2=80=9Ccontact=E2=80=9D sector, contracted sharply and=
+ recovered slowly relative to the rest of the economy. Less understood is h=
+ow firms that =E2=80=9Cwon=E2=80=9D by offering safer substitutes for conta=
+ct sector goods have affected this unequal downturn. Using both firm and in=
+dustry data, we first construct disaggregated measures of revenue growth th=
+at distinguish between contact sector losers, contact sector winners, and t=
+he non-contact sector. We show that contact sector losers contracted roughl=
+y fifty percent more than the sector average, while winners grew. Further, =
+forecast data suggests that the gap between winners and losers will persist=
+ at least through 2022. To explain this evidence, we then develop a simple =
+three sector New Keynesian model with (i) a sector of firms that offers saf=
+e substitutes for risky contact sector goods and (ii) learning by doing. Ov=
+erall, the model captures the unequal !
+ sectoral recession. It also accounts for inflation, including the sharp ru=
+nup in 2021.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>20.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29706?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Have Recreational Marijuana Laws Unde=
+rmined Public Health Progress on Adult Tobacco Use?</a><br>
+Dhaval M. Dave, Yang Liang, Michael F. Pesko, Serena Phillips, and Joseph J=
+. Sabia
+#29706
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Public health experts caution that legalization of recreational marijuana m=
+ay normalize smoking and undermine the decades-long achievements of tobacco=
+ control policy.  However, very little is known about the impact of recreat=
+ional marijuana laws (RMLs) on adult tobacco use.  Using information from f=
+our national datasets (National Survey of Drug Use and Health, Behavioral R=
+isk Factor Surveillance System, Current Population Survey-Tobacco Use Suppl=
+ements, and Population Assessment of Tobacco and Health) and dynamic differ=
+ence-in-differences and discrete-time hazard approaches, we find little sup=
+port for the hypothesis that RML enactment leads to increases in adult toba=
+cco use.  In the short-run, RMLs have no effect on tobacco use and in the m=
+edium-run, we find some evidence of a lagged reduction in tobacco use on th=
+e order of approximately 0.5 to 2 percentage points.  This finding generall=
+y persists across cigarettes and e-cigarettes, is robust to event-study ana=
+lyses generate!
+ d from estimators designed to expunge bias due to heterogeneous dynamic tr=
+eatment effects, and persists in panel data-based survival analyses that ac=
+count for consumption dynamics.  We conclude that fears of adult tobacco-re=
+lated public health costs from RMLs are, at least in the short- and medium-=
+run, unfounded; instead, there may be important public health benefits from=
+ reductions in adult tobacco use.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>21.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29709?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">When is TSLS Actually LATE?</a><br>
+Christine Blandhol, John Bonney, Magne Mogstad, and Alexander Torgovitsky
+#29709
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+Linear instrumental variable estimators, such as two-stage least squares (T=
+SLS), are commonly interpreted as estimating positively weighted averages o=
+f causal effects, referred to as local average treatment effects (LATEs). W=
+e examine whether the LATE interpretation actually applies to the types of =
+TSLS specifications that are used in practice. We show that if the specific=
+ation includes covariates, which most empirical work does, then the LATE in=
+terpretation does not apply in general. Instead, the TSLS estimator will in=
+ general reflect treatment effects for both compliers and always/never-take=
+rs, and some of the treatment effects for the always/never-takers will nece=
+ssarily be negatively weighted. We show that the only specifications that h=
+ave a LATE interpretation are &quot;saturated&quot; specifications that con=
+trol for covariates nonparametrically, implying that such specifications ar=
+e both sufficient and necessary for TSLS to have a LATE interpretation, at =
+least without additional!
+  parametric assumptions. This result is concerning because, as we document=
+, empirical researchers almost never control for covariates nonparametrical=
+ly, and rarely discuss or justify parametric specifications of covariates. =
+We develop a decomposition that quantifies the extent to which the usual LA=
+TE interpretation fails. We apply the decomposition to four empirical analy=
+ses and find strong evidence that the LATE interpretation of TSLS is far fr=
+om accurate for the types of specifications actually used in practice.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>22.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29707?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">A Goldilocks Theory of Fiscal Deficit=
+s</a><br>
+Atif R. Mian, Ludwig Straub, and Amir Sufi
+#29707
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+This paper proposes a tractable framework to analyze fiscal space and the d=
+ynamics of government debt, with a possibly binding zero lower bound (ZLB) =
+constraint. Without the ZLB, a greater primary deficit unambiguously raises=
+ debt. However, debt need not explode: When R &lt; G =E2=80=93 =CF=86, wher=
+e =CF=86 is the sensitivity of R =E2=80=93 G to debt, a modest permanent in=
+crease in the deficit can be sustained forever, a policy we call =E2=80=9Cf=
+ree lunch=E2=80=9D. With the ZLB, the relationship between deficit and debt=
+ can become non-monotone. Both high and low deficits can increase debt, as =
+the latter weaken demand and reduce nominal growth at the ZLB. A rise in in=
+come inequality expands fiscal space outside the ZLB, but contracts it at t=
+he ZLB. Calibrating the model, we find little space for =E2=80=9Cfree lunch=
+=E2=80=9D policies for the United States in 2019, but ample space for Japan=
+.
+</p>
+</span><br><br>
+</td>
+</tr>
+<tr>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" width=3D"14" valign=3D"top">
+<b>23.</b>
+</td>
+<td style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fami=
+ly:Arial,sans-serif;font-size:14px" valign=3D"top">
+<a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"https://=
+www.nber.org/papers/w29695?utm_campaign=3Dntwh&amp;utm_medium=3Demail&amp;u=
+tm_source=3Dntwg15" target=3D"_blank">Traditional Supernatural Beliefs and =
+Prosocial Behavior</a><br>
+Etienne Le Rossignol, Sara Lowes, and Nathan Nunn
+#29695
+
+<br><br><b>Abstract:</b><br>
+<span style=3D"text-align:left;color:rgb(72,72,72);line-height:16px;font-fa=
+mily:Arial,sans-serif;font-size:14px" width=3D"14">
+<p>
+In sub-Saharan Africa, traditional supernatural beliefs, including belief i=
+n witchcraft, black magic, or fetishism, are widespread. Some have hypothes=
+ized that these beliefs help to sustain cooperative behavior in a setting w=
+here the state is often absent. Others have documented that, at least at a =
+macro-level, such beliefs are negatively associated with prosocial behavior=
+. We contribute to a better understanding of the causal effects of these tr=
+aditional supernatural beliefs by using lab-in-the-field experiments in the=
+ Democratic Republic of the Congo. Participants complete a range of experim=
+ental tasks where one player chooses whether to act in a prosocial manner t=
+owards another player. Participants are randomly assigned to another player=
+ that has either a strong or weak belief in witchcraft, and this informatio=
+n is known by the players. We find that participants act less prosocially t=
+owards randomly-assigned partners who believe more strongly in witchcraft. =
+We also find t!
+ hat antisocial behavior is more socially acceptable and prosocial behavior=
+ less socially acceptable when playing with a partner who believes more str=
+ongly in witchcraft. Our findings suggest that the negative relationship be=
+tween witchcraft and prosocial outcomes observed in the data may, in fact, =
+be due to the causal effect of the presence of traditional supernatural bel=
+iefs on people=E2=80=99s behavior.
+</p>
+</span><br><br>
+</td>
+</tr>
+
+</tbody>
+</table>
+</td>
+</tr>
+
+
+              <tr>
+                <td style=3D"padding:35px 40px" bgcolor=3D"#f2f2f2">
+                  <table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0">
+                    <tbody>
+                    <tr>
+                      <td style=3D"text-align:left;color:rgb(109,110,113);l=
+ine-height:18px;padding-bottom:12px;font-family:Arial,sans-serif;font-size:=
+14px">
+<p>
+Recipients of this weekly email may choose to be notified of all new Workin=
+g Papers, or may filter them according to individual interests.
+
+</p>
+<p>You are being notified about All New Working Papers.
+</p>
+<p> </p>
+<p>
+You may tailor the email to your interests <a style=3D"color:rgb(0,93,185);=
+text-decoration:underline" href=3D"https://www.nber.org/ll?u=3Dkarin_li&amp=
+;p=3DjsWcOQ&amp;url=3D%2Fprefs%2Fnotify" target=3D"_blank">
+here</a>.
+</p>
+</td>
+</tr>
+                    <tr>
+                      <td style=3D"text-align:left;color:rgb(109,110,113);l=
+ine-height:18px;font-family:Arial,sans-serif;font-size:14px">
+Comments about the mailing may be sent to
+ <a style=3D"color:rgb(0,93,185);text-decoration:underline" href=3D"mailto:=
+wp@nber.org" target=3D"_blank">
+wp@nber.org
+</a>.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+            </div>
+        </div>
+   =20
+</div>
+</div></div></div>
+</div></div>
+
+--0000000000001a788405d7015db1--
